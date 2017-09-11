@@ -1,0 +1,86 @@
+.branding {     
+	 padding: 20px 0px;
+	.site-branding {
+		text-align: left;
+		position: relative;
+		.site-description {
+			@include font-size(1.5);
+			color: $c3;
+			font-family: $copy_font;
+			padding: 0px 10px 10px 0px;
+			position: relative;
+			margin-bottom: 15px;  
+			margin-top: -15px; 
+		}  
+
+		.site-title {
+			margin-bottom: 0;
+			color: $secondary;
+			a {
+				display: block;
+				color: $secondary;
+			}
+			
+			a:hover {
+				color: $primary!important;
+			}
+		}	
+
+	}
+
+
+	/* header top right */
+	.cart-right {
+	    text-align: right;
+	    margin-top: 25px;
+		li {
+			list-style: none;
+			display: inline-block;
+			color: $secondary;
+			padding: 0;
+			margin: 0;
+			a {
+				color: $white;
+				display: inline-block;
+				@include font-size(1.6);
+				padding: 10px;
+				width: 90px;
+				height: 35px;
+				text-align: center;
+				line-height: 0;
+				background-color: $primary; 
+                &:hover {
+					color: $white;
+					background-color: $secondary; 
+					.fa {
+						//color: $white;		
+					}
+		        }
+			}	
+		}
+	}
+}
+
+.sticky-nav {
+ 	position: fixed;
+	top: -2px;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+}
+.admin-bar .nav-wrap.sticky-nav {
+   top: 30px;
+}
+
+.no-sidebar {
+ 	float: none;
+ 	margin: 0 auto;
+ 	display: block;
+}
+
+
+
+
+
+@import "top-header";
+@import "breadcrumb";
