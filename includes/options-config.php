@@ -166,7 +166,7 @@ function bizplan_display_upgrade() {
     $current_action_link =  admin_url( 'themes.php?page=bizplan_upgrade&tab=pro_features' ); ?>
     <div class="bizplan-wrapper about-wrap">
         <h1><?php printf( esc_html__('Welcome to %1$s - Version %2$s', 'bizplan'), $theme_data->Name ,$theme_data->Version ); ?></h1><?php
-       	printf( __('<div class="about-text"> BizPlan is an elegant WordPress Theme for Charity and Nonprofit organizations. To Promote the events, to Showcase all kinds of documents and much more. The theme is very versatile and can also be easily used by various types of corporations, business and any kind of sites. core feature of WordPress  Has 4 Footer Widget Areas and lot more of customizer options.</div>', 'bizplan') ); ?>
+       	printf( __('<div class="about-text"> BizPlan is a modern and trendy, useful and resourceful, versatile and flexible, powerful and easy to use and responsive WordPress creative multipurpose website theme. It is perfect for all sorts of applications and website archetypes. However, due to its flexibility and easiness it can be used to create any types of sites. this Theme build in customizer it is very easy to use and user friendly. Theme includes lots of features.</div>', 'bizplan') ); ?>
         <a href="https://webulousthemes.com/" target="_blank" class="wp-badge welcome-logo"></a>   
         <p class="upgrade-btn"><a class="upgrade" href="<?php echo esc_url($pro_theme_url); ?>" target="_blank"><?php printf( __( 'Buy %1s Pro - $39', 'bizplan'), $theme_data->Name ); ?></a></p>
 
@@ -512,7 +512,7 @@ function bizplan_display_upgrade() {
 							),
 							'client_cat' => array(
 								'type' => 'category',
-								'label' => __('Slider Posts Category', 'bizplan'),
+								'label' => __('Choose Carousel Category', 'bizplan'),
 								'sanitize_callback' => 'absint',
 							),
 							'enable_home_default_content' => array(

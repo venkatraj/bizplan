@@ -35,7 +35,11 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 								    		<?php the_post_thumbnail('full'); ?>
 								    	</div>
 								    	<div class="flex-caption">
-								    		<?php the_content(); ?>
+								    		<?php the_content(); 
+								    		wp_link_pages( array(
+												'before' => '<div class="page-links">' . esc_html__( 'Pages: ', 'bizplan' ),
+												'after'  => '</div>',
+											) ); ?> 
 								    	</div>
 								    </li>
 							    <?php endif;?>			   
@@ -69,7 +73,7 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 					$args = array(
 						'post_type' => 'page',
 						'post__in' => $service_pages,
-						'posts_per_page' => -1,
+						'posts_per_page' => 3,
 						'orderby' => 'post__in'
 					);
 					$query = new WP_Query($args);
@@ -96,7 +100,11 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 							    	<?php endif; ?>
 							    	<div class="service-content">
 							    	    <?php the_title( sprintf( '<h4 class="service-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h4>' ); ?>
-								    	<?php the_content(); ?>
+								    	<?php the_content(); 
+								    	wp_link_pages( array(
+											'before' => '<div class="page-links">' . esc_html__( 'Pages: ', 'bizplan' ),
+											'after'  => '</div>',
+										) );?>
 							    	</div>
 							    </div>
 							<?php $i++;
@@ -183,6 +191,10 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 				<main id="main" class="site-main" role="main"><?php
 					while ( have_posts() ) : the_post();       
 						the_content();
+						wp_link_pages( array(
+							'before' => '<div class="page-links">' . esc_html__( 'Pages: ', 'bizplan' ),
+							'after'  => '</div>',
+						) );
 					endwhile; ?>
 			    </main><!-- #main -->
 		    </div><!-- #primary -->  

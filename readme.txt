@@ -13,7 +13,7 @@ BizPlan WordPress Theme, Copyright (C) 2017, N. Venkat Raj
 BizPlan is distributed under the terms of the GNU GPL
 
 == Description ==  
-BizPlan is an elegant WordPress Theme for Charity and Nonprofit organizations. To Promote the events, to Showcase all kinds of documents and much more. The theme is very versatile and can also be easily used by various types of corporations, business and any kind of sites. core feature of WordPress  Has 4 Footer Widget Areas and lot more of customizer options.
+BizPlan is a modern and trendy, useful and resourceful, versatile and flexible, powerful and easy to use and responsive WordPress creative multipurpose website theme. It is perfect for all sorts of applications and website archetypes. However, due to its flexibility and easiness it can be used to create any types of sites. this Theme build in customizer it is very easy to use and user friendly. Theme includes lots of features.
 
 == Frequently Asked Questions == 
 = Installation =
@@ -33,8 +33,9 @@ BizPlan is an elegant WordPress Theme for Charity and Nonprofit organizations. T
 8. Enter no. of slides to show from above selected category.
 9. Select Service section #1,#2,#3 from the dropdown list.
 10. Select CTA section
-10. Select no. of recent posts to show on home page.
-11. Enable home page content if you want
+11. Select no. of recent posts to show on home page.
+12. Enable enable Home Page Carousel Section & choose carousel category
+13. Enable home page content if you want
 
 = How to control featured images visibility =
 
@@ -61,7 +62,7 @@ BizPlan WordPress Theme bundles the following third-party resources:
 * {FontAwesome Icon Picker} © Licensed under the MIT License, https://github.com/mjolnic/fontawesome-iconpicker/blob/master/LICENSE
 * {FontAwesome} © Dave Gandy, SIL OFL 1.1 and MIT ,https://fortawesome.github.io/Font-Awesome
 * Screenshot Images is licensed under CC0 Public Domain License.
-	* image © 2015 Pixabay, CC0 1.0 ,https://pixabay.com/en/african-children-beauty-bizplan-2044961/
-	* image © 2015 Pixabay, CC0 1.0 ,https://pixabay.com/en/help-child-bizplan-voluntary-1265227/ 
+	* image © 2015 Pixabay, CC0 1.0 ,https://pixabay.com/en/sunglasses-beard-sky-business-man-2562647/
+	* image © 2015 Pixabay, CC0 1.0 ,https://pixabay.com/en/mobile-phone-samsung-music-605422/
 * All Images inside the images folder are created by own. Those Image are licensed under CC0 Public Domain License GPLv3.
 

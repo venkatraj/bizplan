@@ -21,6 +21,14 @@ msgstr ""
 msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
 msgstr ""
 
+#: archive.php:51, index.php:46, search.php:48
+msgid " &larr; Previous Post"
+msgstr ""
+
+#: archive.php:52, index.php:47, search.php:49
+msgid "Next Post &rarr;"
+msgstr ""
+
 #: comments.php:28
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
@@ -76,11 +84,15 @@ msgstr ""
 msgid "Theme: BizPlan by <a href=\"%1$s\" target=\"_blank\" rel=\"designer\">Webulous Themes</a></p>"
 msgstr ""
 
-#: front-page.php:78
+#: front-page.php:40, front-page.php:105, front-page.php:195, includes/template-tags.php:171, template-parts/content-single.php:38, template-parts/content.php:48
+msgid "Pages: "
+msgstr ""
+
+#: front-page.php:82
 msgid "Features"
 msgstr ""
 
-#: front-page.php:130, includes/template-tags.php:467, template-parts/content.php:40
+#: front-page.php:138, includes/template-tags.php:443, template-parts/content.php:40
 msgid "Read More"
 msgstr ""
 
@@ -168,7 +180,7 @@ msgstr ""
 msgid "Full Width Template"
 msgstr ""
 
-#: admin/control-icon-picker.php:44
+#: admin/control-icon-picker.php:42
 msgid "Inline picker"
 msgstr ""
 
@@ -350,7 +362,7 @@ msgid "Welcome to %1$s - Version %2$s"
 msgstr ""
 
 #: includes/options-config.php:169
-msgid "<div class=\"about-text\"> BizPlan is an elegant WordPress Theme for Charity and Nonprofit organizations. To Promote the events, to Showcase all kinds of documents and much more. The theme is very versatile and can also be easily used by various types of corporations, business and any kind of sites. core feature of WordPress  Has 4 Footer Widget Areas and lot more of customizer options.</div>"
+msgid "<div class=\"about-text\"> BizPlan is a modern and trendy, useful and resourceful, versatile and flexible, powerful and easy to use and responsive WordPress creative multipurpose website theme. It is perfect for all sorts of applications and website archetypes. However, due to its flexibility and easiness it can be used to create any types of sites. this Theme build in customizer it is very easy to use and user friendly. Theme includes lots of features.</div>"
 msgstr ""
 
 #: includes/options-config.php:171, includes/options-config.php:321
@@ -557,7 +569,7 @@ msgstr ""
 msgid "Enable Home Page Slider Section"
 msgstr ""
 
-#: includes/options-config.php:439, includes/options-config.php:515
+#: includes/options-config.php:439
 msgid "Slider Posts Category"
 msgstr ""
 
@@ -611,6 +623,10 @@ msgstr ""
 
 #: includes/options-config.php:509
 msgid "Enable Home Page Carousel Section"
+msgstr ""
+
+#: includes/options-config.php:515
+msgid "Choose Carousel Category"
 msgstr ""
 
 #: includes/options-config.php:520
@@ -717,85 +733,85 @@ msgstr ""
 msgid "Latest Blog"
 msgstr ""
 
-#: includes/template-tags.php:201
+#: includes/template-tags.php:203
 msgid "<i class=\"fa fa-home\"></i>"
 msgstr ""
 
-#: includes/template-tags.php:202
+#: includes/template-tags.php:204
 msgid "Archive by Category \"%s\""
 msgstr ""
 
-#: includes/template-tags.php:203
+#: includes/template-tags.php:205
 msgid "Search Results for \"%s\" Query"
 msgstr ""
 
-#: includes/template-tags.php:204
+#: includes/template-tags.php:206
 msgid "Posts Tagged \"%s\""
 msgstr ""
 
-#: includes/template-tags.php:205
+#: includes/template-tags.php:207
 msgid "Articles Posted by %s"
 msgstr ""
 
-#: includes/template-tags.php:206
+#: includes/template-tags.php:208
 msgid "Error 404"
 msgstr ""
 
-#: includes/template-tags.php:259, includes/template-tags.php:259, includes/template-tags.php:260, includes/template-tags.php:264, includes/template-tags.php:264, includes/template-tags.php:268
+#: includes/template-tags.php:261, includes/template-tags.php:261, includes/template-tags.php:262, includes/template-tags.php:266, includes/template-tags.php:266, includes/template-tags.php:270
 msgid "Y"
 msgstr ""
 
-#: includes/template-tags.php:260
+#: includes/template-tags.php:262
 msgid "m"
 msgstr ""
 
-#: includes/template-tags.php:260, includes/template-tags.php:265
+#: includes/template-tags.php:262, includes/template-tags.php:267
 msgid "F"
 msgstr ""
 
-#: includes/template-tags.php:261
+#: includes/template-tags.php:263
 msgid "d"
 msgstr ""
 
-#: includes/template-tags.php:331
+#: includes/template-tags.php:333
 msgid "Page"
 msgstr ""
 
-#: includes/template-tags.php:352, includes/template-tags.php:518
+#: includes/template-tags.php:354, includes/template-tags.php:494
 msgctxt "post author"
 msgid " %s"
 msgstr ""
 
-#: includes/template-tags.php:372, includes/template-tags.php:538
-msgid "No Comments"
-msgstr ""
-
-#: includes/template-tags.php:374, includes/template-tags.php:540
-msgid " Comments"
-msgstr ""
-
-#: includes/template-tags.php:376, includes/template-tags.php:542
-msgid "1 Comment"
-msgstr ""
-
-#: includes/template-tags.php:380, includes/template-tags.php:546
-msgid "Leave a comment"
-msgstr ""
-
-#: includes/template-tags.php:389, template-parts/content-page.php:29
+#: includes/template-tags.php:365, template-parts/content-page.php:29
 msgid "Edit"
 msgstr ""
 
-#: includes/template-tags.php:436, includes/template-tags.php:439
+#: includes/template-tags.php:412, includes/template-tags.php:415
 msgid "No Related Posts Yet!"
 msgstr ""
 
-#: includes/template-tags.php:502
+#: includes/template-tags.php:478
 msgid "Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our <a href=\"%2$s\">Welcome page</a>"
 msgstr ""
 
-#: includes/template-tags.php:503
+#: includes/template-tags.php:479
 msgid "Get started with BizPlan"
+msgstr ""
+
+#: includes/template-tags.php:514
+msgid "No Comments"
+msgstr ""
+
+#: includes/template-tags.php:516
+msgid " Comments"
+msgstr ""
+
+#: includes/template-tags.php:518
+msgid "1 Comment"
+msgstr ""
+
+#: includes/template-tags.php:522
+msgid "Leave a comment"
 msgstr ""
 
 #: template-parts/content-none.php:14
@@ -816,8 +832,4 @@ msgstr ""
 
 #: template-parts/content-page.php:23
 msgid "Pages:"
-msgstr ""
-
-#: template-parts/content-single.php:38, template-parts/content.php:48
-msgid "Pages: "
 msgstr ""

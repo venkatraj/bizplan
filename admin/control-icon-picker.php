@@ -33,26 +33,16 @@ if( !function_exists('bizplan_icon_add_icon_picker_control') ) :
 			public function enqueue() {
 				wp_enqueue_script( 'icon-picker-js', trailingslashit( get_template_directory_uri() ) . 'js/fontawesome-iconpicker.min.js', array( 'jquery' )  );
 			    wp_enqueue_style( 'icon-picker-css', trailingslashit( get_template_directory_uri() ) . 'css/fontawesome-iconpicker.min.css' );
-			    wp_enqueue_style( 'font-awesome', trailingslashit( get_template_directory_uri() ) . 'css/font-awesome.min.css' );
-			   // wp_enqueue_script( 'icon-picker-jsss', trailingslashit( get_template_directory_uri() ) . 'js/aaa.js',  array( 'jquery' )  );
-			}
+			    wp_enqueue_style( 'font-awesome', trailingslashit( get_template_directory_uri() ) . 'css/font-awesome.min.css' );			}
 
 			public function render_content() {
 			
 
 			?>
-				<label data-title="<?php _e('Inline picker','bizplan'); ?>">
+				<label data-title="<?php esc_attr_e('Inline picker','bizplan'); ?>">
 	                <span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
 	                <input type="text" value="<?php echo esc_attr( $this->value() ); ?>" <?php $this->link(); ?> class="faip" data-placement="inline"/>
 	            </label>
-	            <script type="text/javascript">
-					jQuery(function($) {  
-						//$('.faip').click(function() {
-							//$('.faip').iconpicker(); 
-						   // $('.iconpicker-popover').toggle();
-					    //});
-					});
-				</script>
 			<?php }
 
 		} 

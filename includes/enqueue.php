@@ -19,7 +19,7 @@ function bizplan_scripts() {
 	}
 
 	wp_enqueue_script( 'jquery-flexslider', get_template_directory_uri() . '/js/jquery.flexslider-min.js', array('jquery'), '2.4.0', true );
-	wp_enqueue_script( 'bizplan-custom', get_template_directory_uri() . '/js/custom.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'bizplan-custom', get_template_directory_uri() . '/js/custom.js', array('jquery'), '1.0.0', true );
 	
 }
 add_action( 'wp_enqueue_scripts', 'bizplan_scripts' );         

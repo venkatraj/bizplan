@@ -157,19 +157,21 @@ if( ! function_exists('bizplan_recent_posts') ) {
 				$query->the_post();
 				$output .= '<div class="one-third column">';
 						$output .= '<div class="latest-post">';
-								$output .= '<div class="latest-post-thumb">'; 
-									if ( has_post_thumbnail() ) {
-										$output .= '<a href="'. esc_url(get_permalink()) . '">'. get_the_post_thumbnail($query->post->ID ,'bizplan-recent-posts-img').'</a>';
-									}
-									else {  
-										$output .= '<img src="' . get_template_directory_uri()  . '/images/no-image-blog-full-width.png" alt="" >';
-									}
-								$output .='<span class="data-structure"><span class="dd">' . get_the_time('F').'</span>'.get_the_time('j').'</span>';
-								$output .= '</div><!-- .latest-post-thumb -->';
+								if ( has_post_thumbnail() ) {
+									$output .= '<div class="latest-post-thumb">'; 
+									$output .= '<a href="'. esc_url(get_permalink()) . '">'. get_the_post_thumbnail($query->post->ID ,'bizplan-recent-posts-img').'</a>';
+									$output .='<span class="data-structure"><span class="dd">' . get_the_time('F').'</span>'.get_the_time('j').'</span>';
+							        $output .= '</div><!-- .latest-post-thumb -->';
+								}
 								$output .= '<div class=latest-post-details>';
 								    $output .= '<h5><a href="'. esc_url(get_permalink()) . '">' . get_the_title() . '</a></h5>';									
 									$output .= '<div class="latest-post-content">';
-										$output .= '<p>' . get_the_content() . '</p>';
+										$output .= '<p>' . get_the_content() . '</p>'; 
+										$output .= wp_link_pages( array(
+											'before' => '<div class="page-links">' . esc_html__( 'Pages: ', 'bizplan' ),
+											'after'  => '</div>',
+											'echo' => false,
+										) );
 									$output .= '</div><!-- .latest-post-content -->';
 									$output .='<div class="entry-meta">';
 								    $output .= bizplan_get_author();
@@ -328,7 +330,7 @@ if( ! function_exists('bizplan_recent_posts') ) {
 
 			if ( get_query_var('paged') ) {
 				if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ' (';
-				echo __('Page', 'bizplan' ) . ' ' . get_query_var('paged');
+				 _e('Page', 'bizplan' ) . ' ' . get_query_var('paged');
 				if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ')';
 			}
 
@@ -357,32 +359,6 @@ if ( ! function_exists( 'bizplan_get_author' ) ) :
 	}
 endif;  
 
-if ( ! function_exists( 'bizplan_comments_meta' ) ) :
-	function bizplan_comments_meta() {
-		echo bizplan_get_comments_meta();	
-	}  
-endif;  
-
-if ( ! function_exists( 'bizplan_get_comments_meta' ) ) :
-	function bizplan_get_comments_meta() {			
-		$num_comments = get_comments_number(); // get_comments_number returns only a numeric value
- 
-		if ( comments_open() ) {
-		  if ( $num_comments == 0 ) {
-		    $comments = __('No Comments','bizplan');
-		  } elseif ( $num_comments > 1 ) {
-		    $comments = $num_comments . __(' Comments','bizplan');
-		  } else {
-		    $comments = __('1 Comment','bizplan');  
-		  }
-		  $write_comments = '<span class="comments-link"><i class="fa fa-comments"></i><a href="' . esc_url(get_comments_link()) .'">'. esc_html($comments).'</a></span>';
-		} else{
-			$write_comments = '<span class="comments-link"><i class="fa fa-comments"></i><a href="' . esc_url(get_comments_link()) .'">'. esc_html(__('Leave a comment', 'bizplan') ).'</a></span>';
-		}
-		return $write_comments;	
-	}
-
-endif;
 
 if ( ! function_exists( 'bizplan_edit' ) ) :
 	function bizplan_edit() {
